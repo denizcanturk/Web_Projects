@@ -1,0 +1,20 @@
+[
+    {
+        "label": "gmap",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "gmap",
+        "description": "gmap",
+        "detail": "gmap",
+        "documentation": {}
+    },
+    {
+        "label": "myInput",
+        "kind": 5,
+        "importPath": "deneme",
+        "description": "deneme",
+        "peekOfCode": "myInput = input(\"Enter something: \") # Пример ввода: hello\nprint(myInput * 3)\ninput(\"Herhangi bir tuşa basınız...\")",
+        "detail": "deneme",
+        "documentation": {}
+    }
+]
