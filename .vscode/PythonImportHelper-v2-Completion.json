@@ -1,20 +1,254 @@
 [
     {
-        "label": "gmap",
+        "label": "cv2",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "gmap",
-        "description": "gmap",
-        "detail": "gmap",
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
         "documentation": {}
     },
     {
-        "label": "myInput",
+        "label": "mediapipe",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mediapipe",
+        "description": "mediapipe",
+        "detail": "mediapipe",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "mp_pose",
         "kind": 5,
-        "importPath": "deneme",
-        "description": "deneme",
-        "peekOfCode": "myInput = input(\"Enter something: \") # Пример ввода: hello\nprint(myInput * 3)\ninput(\"Herhangi bir tuşa basınız...\")",
-        "detail": "deneme",
+        "importPath": "pages.PozeTracker",
+        "description": "pages.PozeTracker",
+        "peekOfCode": "mp_pose = mp.solutions.pose\nmp_draw = mp.solutions.drawing_utils\npose = mp_pose.Pose()\n# take video input for pose detection\n# you can put here video of your choice\ncap = cv2.VideoCapture(\"sampleVideo.mp4\")\n# take live camera  input for pose detecti,\n# ,\n# \"on\"\n# cap = cv2.VideoCapture(0)",
+        "detail": "pages.PozeTracker",
+        "documentation": {}
+    },
+    {
+        "label": "mp_draw",
+        "kind": 5,
+        "importPath": "pages.PozeTracker",
+        "description": "pages.PozeTracker",
+        "peekOfCode": "mp_draw = mp.solutions.drawing_utils\npose = mp_pose.Pose()\n# take video input for pose detection\n# you can put here video of your choice\ncap = cv2.VideoCapture(\"sampleVideo.mp4\")\n# take live camera  input for pose detecti,\n# ,\n# \"on\"\n# cap = cv2.VideoCapture(0)\n# read each frame/image from capture object",
+        "detail": "pages.PozeTracker",
+        "documentation": {}
+    },
+    {
+        "label": "pose",
+        "kind": 5,
+        "importPath": "pages.PozeTracker",
+        "description": "pages.PozeTracker",
+        "peekOfCode": "pose = mp_pose.Pose()\n# take video input for pose detection\n# you can put here video of your choice\ncap = cv2.VideoCapture(\"sampleVideo.mp4\")\n# take live camera  input for pose detecti,\n# ,\n# \"on\"\n# cap = cv2.VideoCapture(0)\n# read each frame/image from capture object\nwhile True:",
+        "detail": "pages.PozeTracker",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "pages.PozeTracker",
+        "description": "pages.PozeTracker",
+        "peekOfCode": "cap = cv2.VideoCapture(\"sampleVideo.mp4\")\n# take live camera  input for pose detecti,\n# ,\n# \"on\"\n# cap = cv2.VideoCapture(0)\n# read each frame/image from capture object\nwhile True:\n    ret, img = cap.read()\n    # resize image/frame so we can accommodate it on our screen\n    img = cv2.resize(img, (600, 400))",
+        "detail": "pages.PozeTracker",
+        "documentation": {}
+    },
+    {
+        "label": "my_function",
+        "kind": 2,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "def my_function():\n    ' ' 'Demonstrates triple double quotes docstrings and does nothing really' ' '\n    return None\nprint(\"Using __doc__:\")\nprint(my_function.__doc__)\nprint(\"Using help:\")\nhelp(my_function)\n\"\"\"sayi1 = int(input(\"Sayi 1 Giriniz : \"))\nsayi2 = int(input(\"Sayi 2 Giriniz : \"))\nsonuc = sayi1 * sayi2",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "onk",
+        "kind": 2,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "def onk(a,b):\n    print(a)\n    print(b)\nonk(b,a)\nDENIZ=0\ndENIZ=1\nprint(DENIZ)\nprint(dENIZ)\nisim = input(\"Lütfen isminizi giriniz : \")\nsoyad = input(\"Soyadınız : \")",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"sayi1",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "\"\"\"sayi1 = int(input(\"Sayi 1 Giriniz : \"))\nsayi2 = int(input(\"Sayi 2 Giriniz : \"))\nsonuc = sayi1 * sayi2\nprint(sonuc)\nd = 0  #Gecen gun sayisi\nelapsedTimeInDays = 0       #Camel Case\nelapsed_time_in_days = 0    #Snake Case\nElapsedTimeInDays = 0       #Pascal Case",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "sayi2",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "sayi2 = int(input(\"Sayi 2 Giriniz : \"))\nsonuc = sayi1 * sayi2\nprint(sonuc)\nd = 0  #Gecen gun sayisi\nelapsedTimeInDays = 0       #Camel Case\nelapsed_time_in_days = 0    #Snake Case\nElapsedTimeInDays = 0       #Pascal Case\na = 1",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "sonuc",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "sonuc = sayi1 * sayi2\nprint(sonuc)\nd = 0  #Gecen gun sayisi\nelapsedTimeInDays = 0       #Camel Case\nelapsed_time_in_days = 0    #Snake Case\nElapsedTimeInDays = 0       #Pascal Case\na = 1\nprint(a)",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "d = 0  #Gecen gun sayisi\nelapsedTimeInDays = 0       #Camel Case\nelapsed_time_in_days = 0    #Snake Case\nElapsedTimeInDays = 0       #Pascal Case\na = 1\nprint(a)\na += 2\nprint(a)\nprint(a+7)",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "elapsedTimeInDays",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "elapsedTimeInDays = 0       #Camel Case\nelapsed_time_in_days = 0    #Snake Case\nElapsedTimeInDays = 0       #Pascal Case\na = 1\nprint(a)\na += 2\nprint(a)\nprint(a+7)\nb = 2.0",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "elapsed_time_in_days",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "elapsed_time_in_days = 0    #Snake Case\nElapsedTimeInDays = 0       #Pascal Case\na = 1\nprint(a)\na += 2\nprint(a)\nprint(a+7)\nb = 2.0\nprint(b)",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "ElapsedTimeInDays",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "ElapsedTimeInDays = 0       #Pascal Case\na = 1\nprint(a)\na += 2\nprint(a)\nprint(a+7)\nb = 2.0\nprint(b)\nprint(2.5 + b)",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "a = 1\nprint(a)\na += 2\nprint(a)\nprint(a+7)\nb = 2.0\nprint(b)\nprint(2.5 + b)",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "b = 2.0\nprint(b)\nprint(2.5 + b)\nprint(5/7)\nprint(999_999_999_999)",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "a = 4\nb = 534\ndef onk(a,b):\n    print(a)\n    print(b)\nonk(b,a)\nDENIZ=0\ndENIZ=1\nprint(DENIZ)\nprint(dENIZ)",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "b = 534\ndef onk(a,b):\n    print(a)\n    print(b)\nonk(b,a)\nDENIZ=0\ndENIZ=1\nprint(DENIZ)\nprint(dENIZ)\nisim = input(\"Lütfen isminizi giriniz : \")",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "isim",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "isim = input(\"Lütfen isminizi giriniz : \")\nsoyad = input(\"Soyadınız : \")\nprint(f\"Adınız {isim} {soyad}, tanıştığımıza memnun oldum... \")\nprint(type(isim))\na = input()\nprint(a)\nimport math\nprint(math.pi)\n\"\"\"",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "soyad",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "soyad = input(\"Soyadınız : \")\nprint(f\"Adınız {isim} {soyad}, tanıştığımıza memnun oldum... \")\nprint(type(isim))\na = input()\nprint(a)\nimport math\nprint(math.pi)\n\"\"\"",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "a = input()\nprint(a)\nimport math\nprint(math.pi)\n\"\"\"",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "sayac",
+        "kind": 5,
+        "importPath": "pages.tekrar",
+        "description": "pages.tekrar",
+        "peekOfCode": "sayac = 1\nsayi = int(input(\"Sayı Giriniz : \"))\ntoplam = 0\nwhile sayac <= sayi:\n    sayac +=1\n    toplam = toplam + sayac\nprint(\"Toplam Değeri \", toplam)",
+        "detail": "pages.tekrar",
+        "documentation": {}
+    },
+    {
+        "label": "sayi",
+        "kind": 5,
+        "importPath": "pages.tekrar",
+        "description": "pages.tekrar",
+        "peekOfCode": "sayi = int(input(\"Sayı Giriniz : \"))\ntoplam = 0\nwhile sayac <= sayi:\n    sayac +=1\n    toplam = toplam + sayac\nprint(\"Toplam Değeri \", toplam)",
+        "detail": "pages.tekrar",
+        "documentation": {}
+    },
+    {
+        "label": "toplam",
+        "kind": 5,
+        "importPath": "pages.tekrar",
+        "description": "pages.tekrar",
+        "peekOfCode": "toplam = 0\nwhile sayac <= sayi:\n    sayac +=1\n    toplam = toplam + sayac\nprint(\"Toplam Değeri \", toplam)",
+        "detail": "pages.tekrar",
         "documentation": {}
     }
 ]
