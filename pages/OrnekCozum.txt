@@ -1,0 +1,17 @@
+"""
+ Problem bize kullanıcı tarafından girilecek olan F değeri dediği için öncelikle kullanıcıdan bir girdi almalıyız.
+"""
+
+#sicaklık değişkenimize kullanıcının gireceği bir değerin atamasını yapıyoruz.
+sicaklikF = int(input("Fahrenheit cinsinden sıcaklık değerini giriniz : "))
+
+#Kullanıcı tarafından girilen değeri formulde yerine koyuyoruz
+c = (sicaklikF -32) * 5/9
+
+#işlemi ile F cinsinden girilen sıcaklığın C karşılığını bulmuş oluyoruz. Ve daha sonra bunu ekrana yazdırıyoruz.
+
+print("Santigrat Karşılığı : ", sicaklikF)
+
+"""
+ Diğerlerini de bu şekilde düşünerek yapmaya çalışın lütfen Yine sorun yaşarsanız haberleşelim. Kolay gelsin.
+"""

@@ -1,5 +1,31 @@
 [
     {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "cv2",
         "kind": 6,
         "isExtraImport": true,
@@ -27,21 +53,300 @@
         "documentation": {}
     },
     {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
+        "label": "load_html",
+        "kind": 2,
+        "importPath": "Portfolio.mainLit",
+        "description": "Portfolio.mainLit",
+        "peekOfCode": "def load_html(file_path):\n    with open(file_path, \"r\") as f:\n        html_content = f.read()\n    return html_content\n# Home Page\nif page == \"Home\":\n    st.markdown(\"<div class='section'><h2>About Me</h2>\", unsafe_allow_html=True)\n    st.write(\"\"\"\n    Hello! I'm [Your Name], a [Your Profession/Role]. \n    I have a passion for [Your Passion] and a knack for [Your Skill]. ",
+        "detail": "Portfolio.mainLit",
         "documentation": {}
     },
     {
-        "label": "math",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "math",
-        "description": "math",
-        "detail": "math",
+        "label": "page",
+        "kind": 5,
+        "importPath": "Portfolio.mainLit",
+        "description": "Portfolio.mainLit",
+        "peekOfCode": "page = st.sidebar.radio(\"Select a page:\", [\"Home\", \"Projects\", \"Skills\", \"Contact\"])\n# Function to load HTML content\ndef load_html(file_path):\n    with open(file_path, \"r\") as f:\n        html_content = f.read()\n    return html_content\n# Home Page\nif page == \"Home\":\n    st.markdown(\"<div class='section'><h2>About Me</h2>\", unsafe_allow_html=True)\n    st.write(\"\"\"",
+        "detail": "Portfolio.mainLit",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"sicaklik",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "\"\"\"sicaklik = int(input(\"Fahrenheit Değeri Giriniz : \"))\nsantigrat = (sicaklik - 32) * 5/9\nprint(\"C değeri :\" , santigrat)\"\"\"\n\"\"\"sicaklik = int(input(\"Fahrenheit Değeri Giriniz : \"))\nfahr = (sicaklik * 9/5) +32\nprint(\"C değeri :\" , fahr)\"\"\"\n\"\"\"taban = int(input(\"Taban Uzunluğunu Girniz : \"))\nyukseklik = int(intput(\"Yukseklik : \"))\nalan = taban * yukseklik / 2\nprint(\"Alan : \", alan)\"\"\"",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "santigrat",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "santigrat = (sicaklik - 32) * 5/9\nprint(\"C değeri :\" , santigrat)\"\"\"\n\"\"\"sicaklik = int(input(\"Fahrenheit Değeri Giriniz : \"))\nfahr = (sicaklik * 9/5) +32\nprint(\"C değeri :\" , fahr)\"\"\"\n\"\"\"taban = int(input(\"Taban Uzunluğunu Girniz : \"))\nyukseklik = int(intput(\"Yukseklik : \"))\nalan = taban * yukseklik / 2\nprint(\"Alan : \", alan)\"\"\"\n\"\"\"vize = int(input(\"Vize Notunuz : \"))",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"sicaklik",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "\"\"\"sicaklik = int(input(\"Fahrenheit Değeri Giriniz : \"))\nfahr = (sicaklik * 9/5) +32\nprint(\"C değeri :\" , fahr)\"\"\"\n\"\"\"taban = int(input(\"Taban Uzunluğunu Girniz : \"))\nyukseklik = int(intput(\"Yukseklik : \"))\nalan = taban * yukseklik / 2\nprint(\"Alan : \", alan)\"\"\"\n\"\"\"vize = int(input(\"Vize Notunuz : \"))\nfinal = int(input(\"Final Notunuz : \"))\nGECMENOTU = 70",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "fahr",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "fahr = (sicaklik * 9/5) +32\nprint(\"C değeri :\" , fahr)\"\"\"\n\"\"\"taban = int(input(\"Taban Uzunluğunu Girniz : \"))\nyukseklik = int(intput(\"Yukseklik : \"))\nalan = taban * yukseklik / 2\nprint(\"Alan : \", alan)\"\"\"\n\"\"\"vize = int(input(\"Vize Notunuz : \"))\nfinal = int(input(\"Final Notunuz : \"))\nGECMENOTU = 70\nnotu = vize * 0.3 + final * 0.7",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"taban",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "\"\"\"taban = int(input(\"Taban Uzunluğunu Girniz : \"))\nyukseklik = int(intput(\"Yukseklik : \"))\nalan = taban * yukseklik / 2\nprint(\"Alan : \", alan)\"\"\"\n\"\"\"vize = int(input(\"Vize Notunuz : \"))\nfinal = int(input(\"Final Notunuz : \"))\nGECMENOTU = 70\nnotu = vize * 0.3 + final * 0.7\nif notu >= GECMENOTU:\n    print(\"GEÇTI\")",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "yukseklik",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "yukseklik = int(intput(\"Yukseklik : \"))\nalan = taban * yukseklik / 2\nprint(\"Alan : \", alan)\"\"\"\n\"\"\"vize = int(input(\"Vize Notunuz : \"))\nfinal = int(input(\"Final Notunuz : \"))\nGECMENOTU = 70\nnotu = vize * 0.3 + final * 0.7\nif notu >= GECMENOTU:\n    print(\"GEÇTI\")\nelse:",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "alan",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "alan = taban * yukseklik / 2\nprint(\"Alan : \", alan)\"\"\"\n\"\"\"vize = int(input(\"Vize Notunuz : \"))\nfinal = int(input(\"Final Notunuz : \"))\nGECMENOTU = 70\nnotu = vize * 0.3 + final * 0.7\nif notu >= GECMENOTU:\n    print(\"GEÇTI\")\nelse:\n    print(\"ÇAKTI\")\"\"\"",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"vize",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "\"\"\"vize = int(input(\"Vize Notunuz : \"))\nfinal = int(input(\"Final Notunuz : \"))\nGECMENOTU = 70\nnotu = vize * 0.3 + final * 0.7\nif notu >= GECMENOTU:\n    print(\"GEÇTI\")\nelse:\n    print(\"ÇAKTI\")\"\"\"\n\"\"\"maas = int(input(\"Maas Giriniz : \"))\ncocuk = int(input(\"Cocuk Sayısı : \"))",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "final",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "final = int(input(\"Final Notunuz : \"))\nGECMENOTU = 70\nnotu = vize * 0.3 + final * 0.7\nif notu >= GECMENOTU:\n    print(\"GEÇTI\")\nelse:\n    print(\"ÇAKTI\")\"\"\"\n\"\"\"maas = int(input(\"Maas Giriniz : \"))\ncocuk = int(input(\"Cocuk Sayısı : \"))\nif cocuk == 1:",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "GECMENOTU",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "GECMENOTU = 70\nnotu = vize * 0.3 + final * 0.7\nif notu >= GECMENOTU:\n    print(\"GEÇTI\")\nelse:\n    print(\"ÇAKTI\")\"\"\"\n\"\"\"maas = int(input(\"Maas Giriniz : \"))\ncocuk = int(input(\"Cocuk Sayısı : \"))\nif cocuk == 1:\n    maas *= 1.05",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "notu",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "notu = vize * 0.3 + final * 0.7\nif notu >= GECMENOTU:\n    print(\"GEÇTI\")\nelse:\n    print(\"ÇAKTI\")\"\"\"\n\"\"\"maas = int(input(\"Maas Giriniz : \"))\ncocuk = int(input(\"Cocuk Sayısı : \"))\nif cocuk == 1:\n    maas *= 1.05\nelif cocuk == 2:",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"maas",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "\"\"\"maas = int(input(\"Maas Giriniz : \"))\ncocuk = int(input(\"Cocuk Sayısı : \"))\nif cocuk == 1:\n    maas *= 1.05\nelif cocuk == 2:\n    maas *= 1.1\nelif cocuk >=3:\n    maas*= 1.15\nelse:\n    maas = maas",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "cocuk",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "cocuk = int(input(\"Cocuk Sayısı : \"))\nif cocuk == 1:\n    maas *= 1.05\nelif cocuk == 2:\n    maas *= 1.1\nelif cocuk >=3:\n    maas*= 1.15\nelse:\n    maas = maas\nprint(\"Alacağınız Maas : \", maas) \"\"\"",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"isim",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "\"\"\"isim = (input(\"Bacım adını gir : \"))\nsayac = 1\nwhile sayac < 11:\n    sayac += 1\n    print(isim)\"\"\"\n\"\"\"sayi = int(input(\"Sayi gir :\"))\ntekSayiToplam = 0\ntekSayiCarp = 1\nciftSayiTop = 0\nsayac = 1",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "sayac",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "sayac = 1\nwhile sayac < 11:\n    sayac += 1\n    print(isim)\"\"\"\n\"\"\"sayi = int(input(\"Sayi gir :\"))\ntekSayiToplam = 0\ntekSayiCarp = 1\nciftSayiTop = 0\nsayac = 1\nwhile sayac <=sayi:",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"sayi",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "\"\"\"sayi = int(input(\"Sayi gir :\"))\ntekSayiToplam = 0\ntekSayiCarp = 1\nciftSayiTop = 0\nsayac = 1\nwhile sayac <=sayi:\n    sayac+=1\n    if sayac % 2 == 0 :\n        ciftSayiTop+= sayac**2\n    else:",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "tekSayiToplam",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "tekSayiToplam = 0\ntekSayiCarp = 1\nciftSayiTop = 0\nsayac = 1\nwhile sayac <=sayi:\n    sayac+=1\n    if sayac % 2 == 0 :\n        ciftSayiTop+= sayac**2\n    else:\n        tekSayiCarp *=sayac",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "tekSayiCarp",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "tekSayiCarp = 1\nciftSayiTop = 0\nsayac = 1\nwhile sayac <=sayi:\n    sayac+=1\n    if sayac % 2 == 0 :\n        ciftSayiTop+= sayac**2\n    else:\n        tekSayiCarp *=sayac\n        tekSayiToplam += sayac",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "ciftSayiTop",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "ciftSayiTop = 0\nsayac = 1\nwhile sayac <=sayi:\n    sayac+=1\n    if sayac % 2 == 0 :\n        ciftSayiTop+= sayac**2\n    else:\n        tekSayiCarp *=sayac\n        tekSayiToplam += sayac\nprint(tekSayiCarp, tekSayiToplam, ciftSayiTop)",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "sayac",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "sayac = 1\nwhile sayac <=sayi:\n    sayac+=1\n    if sayac % 2 == 0 :\n        ciftSayiTop+= sayac**2\n    else:\n        tekSayiCarp *=sayac\n        tekSayiToplam += sayac\nprint(tekSayiCarp, tekSayiToplam, ciftSayiTop)\n\"\"\"",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"sayac",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "\"\"\"sayac = 1\nsayi = int(input(\"Sayı gir : \"))\ntop = 0\nwhile sayac <= sayi:\n    sayac+=1\n    top +=sayac\nprint(top)\"\"\"\n\"\"\"yas = 75\nprint(f\"Girdiğiniz sayi {yas} dir\")\nisim = \"Rahime\"",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "sayi",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "sayi = int(input(\"Sayı gir : \"))\ntop = 0\nwhile sayac <= sayi:\n    sayac+=1\n    top +=sayac\nprint(top)\"\"\"\n\"\"\"yas = 75\nprint(f\"Girdiğiniz sayi {yas} dir\")\nisim = \"Rahime\"\nsoyisim = \"Aydan\"",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "top",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "top = 0\nwhile sayac <= sayi:\n    sayac+=1\n    top +=sayac\nprint(top)\"\"\"\n\"\"\"yas = 75\nprint(f\"Girdiğiniz sayi {yas} dir\")\nisim = \"Rahime\"\nsoyisim = \"Aydan\"\ntumIsim = isim + soyisim",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"yas",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "\"\"\"yas = 75\nprint(f\"Girdiğiniz sayi {yas} dir\")\nisim = \"Rahime\"\nsoyisim = \"Aydan\"\ntumIsim = isim + soyisim\nprint(isim + soyisim)\nprint(tumIsim)\nprint(isim + str(yas) + \"yasında\")\"\"\"\n#print(5*\"+-+\")\n\"\"\"print(\"+\" + 10 * \"-\" + \"+\")",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "isim",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "isim = \"Rahime\"\nsoyisim = \"Aydan\"\ntumIsim = isim + soyisim\nprint(isim + soyisim)\nprint(tumIsim)\nprint(isim + str(yas) + \"yasında\")\"\"\"\n#print(5*\"+-+\")\n\"\"\"print(\"+\" + 10 * \"-\" + \"+\")\nprint(\"+\" + 10 * \" \" + \"+\")\nprint(\"+\" + 10 * \"-\" + \"+\")",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "soyisim",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "soyisim = \"Aydan\"\ntumIsim = isim + soyisim\nprint(isim + soyisim)\nprint(tumIsim)\nprint(isim + str(yas) + \"yasında\")\"\"\"\n#print(5*\"+-+\")\n\"\"\"print(\"+\" + 10 * \"-\" + \"+\")\nprint(\"+\" + 10 * \" \" + \"+\")\nprint(\"+\" + 10 * \"-\" + \"+\")\nisim = \"Deniz CANTÜRK\"",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "tumIsim",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "tumIsim = isim + soyisim\nprint(isim + soyisim)\nprint(tumIsim)\nprint(isim + str(yas) + \"yasında\")\"\"\"\n#print(5*\"+-+\")\n\"\"\"print(\"+\" + 10 * \"-\" + \"+\")\nprint(\"+\" + 10 * \" \" + \"+\")\nprint(\"+\" + 10 * \"-\" + \"+\")\nisim = \"Deniz CANTÜRK\"\nprint(len(isim))\"\"\"",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "isim",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "isim = \"Deniz CANTÜRK\"\nprint(len(isim))\"\"\"\nisim = \"Deniz\"\nuz = len(isim)\ncharSayisi = uz + 10\nprint(\"+\" + charSayisi*\"-\" + \"+\")\nprint(\"+\" + ((charSayisi-uz)//2) * \" \" + isim  + ((charSayisi-uz)//2) * \" \" + \"+\")\nprint(\"+\" + charSayisi*\"-\" + \"+\")",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "isim",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "isim = \"Deniz\"\nuz = len(isim)\ncharSayisi = uz + 10\nprint(\"+\" + charSayisi*\"-\" + \"+\")\nprint(\"+\" + ((charSayisi-uz)//2) * \" \" + isim  + ((charSayisi-uz)//2) * \" \" + \"+\")\nprint(\"+\" + charSayisi*\"-\" + \"+\")",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "uz",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "uz = len(isim)\ncharSayisi = uz + 10\nprint(\"+\" + charSayisi*\"-\" + \"+\")\nprint(\"+\" + ((charSayisi-uz)//2) * \" \" + isim  + ((charSayisi-uz)//2) * \" \" + \"+\")\nprint(\"+\" + charSayisi*\"-\" + \"+\")",
+        "detail": "pages.Ders5Cozumler",
+        "documentation": {}
+    },
+    {
+        "label": "charSayisi",
+        "kind": 5,
+        "importPath": "pages.Ders5Cozumler",
+        "description": "pages.Ders5Cozumler",
+        "peekOfCode": "charSayisi = uz + 10\nprint(\"+\" + charSayisi*\"-\" + \"+\")\nprint(\"+\" + ((charSayisi-uz)//2) * \" \" + isim  + ((charSayisi-uz)//2) * \" \" + \"+\")\nprint(\"+\" + charSayisi*\"-\" + \"+\")",
+        "detail": "pages.Ders5Cozumler",
         "documentation": {}
     },
     {
@@ -81,47 +386,29 @@
         "documentation": {}
     },
     {
-        "label": "my_function",
-        "kind": 2,
-        "importPath": "pages.denem",
-        "description": "pages.denem",
-        "peekOfCode": "def my_function():\n    ' ' 'Demonstrates triple double quotes docstrings and does nothing really' ' '\n    return None\nprint(\"Using __doc__:\")\nprint(my_function.__doc__)\nprint(\"Using help:\")\nhelp(my_function)\n\"\"\"sayi1 = int(input(\"Sayi 1 Giriniz : \"))\nsayi2 = int(input(\"Sayi 2 Giriniz : \"))\nsonuc = sayi1 * sayi2",
-        "detail": "pages.denem",
-        "documentation": {}
-    },
-    {
-        "label": "onk",
-        "kind": 2,
-        "importPath": "pages.denem",
-        "description": "pages.denem",
-        "peekOfCode": "def onk(a,b):\n    print(a)\n    print(b)\nonk(b,a)\nDENIZ=0\ndENIZ=1\nprint(DENIZ)\nprint(dENIZ)\nisim = input(\"Lütfen isminizi giriniz : \")\nsoyad = input(\"Soyadınız : \")",
-        "detail": "pages.denem",
-        "documentation": {}
-    },
-    {
-        "label": "\"\"\"sayi1",
+        "label": "a",
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "\"\"\"sayi1 = int(input(\"Sayi 1 Giriniz : \"))\nsayi2 = int(input(\"Sayi 2 Giriniz : \"))\nsonuc = sayi1 * sayi2\nprint(sonuc)\nd = 0  #Gecen gun sayisi\nelapsedTimeInDays = 0       #Camel Case\nelapsed_time_in_days = 0    #Snake Case\nElapsedTimeInDays = 0       #Pascal Case",
+        "peekOfCode": "a = 3.3423423424234234242\nprint(9//6)\nprint(9 % 6)\nprint((9 % 6) % 2)\nprint(2**3**2)\nprint(2**9)\nidx = 1\nwhile idx < 9:\n    print(idx*\"*\")\n    idx+=1",
         "detail": "pages.denem",
         "documentation": {}
     },
     {
-        "label": "sayi2",
+        "label": "idx",
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "sayi2 = int(input(\"Sayi 2 Giriniz : \"))\nsonuc = sayi1 * sayi2\nprint(sonuc)\nd = 0  #Gecen gun sayisi\nelapsedTimeInDays = 0       #Camel Case\nelapsed_time_in_days = 0    #Snake Case\nElapsedTimeInDays = 0       #Pascal Case\na = 1",
+        "peekOfCode": "idx = 1\nwhile idx < 9:\n    print(idx*\"*\")\n    idx+=1\nprint(\"+\"+10*\"-\" + \"+\")\nprint(\"|\" + \" \" *10 + \"|\")\nprint(\"+\"+10*\"-\" + \"+\")\nprint(str(a) * 5)\nprint(range(1,4))\nb= \"_asdlfkjfl_\"",
         "detail": "pages.denem",
         "documentation": {}
     },
     {
-        "label": "sonuc",
+        "label": "g",
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "sonuc = sayi1 * sayi2\nprint(sonuc)\nd = 0  #Gecen gun sayisi\nelapsedTimeInDays = 0       #Camel Case\nelapsed_time_in_days = 0    #Snake Case\nElapsedTimeInDays = 0       #Pascal Case\na = 1\nprint(a)",
+        "peekOfCode": "g = 81\nd = 3\ne = a / 3\nf = g // 3\nprint(type(a))\nprint(type(d))\nprint(type(e))\nprint(type(f))\nprint(f)\nh = g / d",
         "detail": "pages.denem",
         "documentation": {}
     },
@@ -130,70 +417,106 @@
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "d = 0  #Gecen gun sayisi\nelapsedTimeInDays = 0       #Camel Case\nelapsed_time_in_days = 0    #Snake Case\nElapsedTimeInDays = 0       #Pascal Case\na = 1\nprint(a)\na += 2\nprint(a)\nprint(a+7)",
+        "peekOfCode": "d = 3\ne = a / 3\nf = g // 3\nprint(type(a))\nprint(type(d))\nprint(type(e))\nprint(type(f))\nprint(f)\nh = g / d\nprint(type(h))",
         "detail": "pages.denem",
         "documentation": {}
     },
     {
-        "label": "elapsedTimeInDays",
+        "label": "e",
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "elapsedTimeInDays = 0       #Camel Case\nelapsed_time_in_days = 0    #Snake Case\nElapsedTimeInDays = 0       #Pascal Case\na = 1\nprint(a)\na += 2\nprint(a)\nprint(a+7)\nb = 2.0",
+        "peekOfCode": "e = a / 3\nf = g // 3\nprint(type(a))\nprint(type(d))\nprint(type(e))\nprint(type(f))\nprint(f)\nh = g / d\nprint(type(h))\nprint(h)",
         "detail": "pages.denem",
         "documentation": {}
     },
     {
-        "label": "elapsed_time_in_days",
+        "label": "f",
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "elapsed_time_in_days = 0    #Snake Case\nElapsedTimeInDays = 0       #Pascal Case\na = 1\nprint(a)\na += 2\nprint(a)\nprint(a+7)\nb = 2.0\nprint(b)",
+        "peekOfCode": "f = g // 3\nprint(type(a))\nprint(type(d))\nprint(type(e))\nprint(type(f))\nprint(f)\nh = g / d\nprint(type(h))\nprint(h)\nprint(a*d)",
         "detail": "pages.denem",
         "documentation": {}
     },
     {
-        "label": "ElapsedTimeInDays",
+        "label": "h",
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "ElapsedTimeInDays = 0       #Pascal Case\na = 1\nprint(a)\na += 2\nprint(a)\nprint(a+7)\nb = 2.0\nprint(b)\nprint(2.5 + b)",
+        "peekOfCode": "h = g / d\nprint(type(h))\nprint(h)\nprint(a*d)\nflt = 23.1415926\nkInt = 11\nbInt = 1234\nbolmeSonucuF_I = flt / kInt\nbolmeSonucu_kI = bInt / kInt\nbolumb_kI = bInt // kInt",
         "detail": "pages.denem",
         "documentation": {}
     },
     {
-        "label": "a",
+        "label": "flt",
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "a = 1\nprint(a)\na += 2\nprint(a)\nprint(a+7)\nb = 2.0\nprint(b)\nprint(2.5 + b)",
+        "peekOfCode": "flt = 23.1415926\nkInt = 11\nbInt = 1234\nbolmeSonucuF_I = flt / kInt\nbolmeSonucu_kI = bInt / kInt\nbolumb_kI = bInt // kInt\nprint(bolmeSonucuF_I, type(bolmeSonucuF_I))\nprint(bolmeSonucu_kI, type(bolmeSonucu_kI))\nprint(int(bolmeSonucu_kI), type(bolmeSonucu_kI))\nprint(bolumb_kI, type (bolumb_kI))",
         "detail": "pages.denem",
         "documentation": {}
     },
     {
-        "label": "b",
+        "label": "kInt",
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "b = 2.0\nprint(b)\nprint(2.5 + b)\nprint(5/7)\nprint(999_999_999_999)",
+        "peekOfCode": "kInt = 11\nbInt = 1234\nbolmeSonucuF_I = flt / kInt\nbolmeSonucu_kI = bInt / kInt\nbolumb_kI = bInt // kInt\nprint(bolmeSonucuF_I, type(bolmeSonucuF_I))\nprint(bolmeSonucu_kI, type(bolmeSonucu_kI))\nprint(int(bolmeSonucu_kI), type(bolmeSonucu_kI))\nprint(bolumb_kI, type (bolumb_kI))\nmaas = float(input(\"Maas miktarınızı giriniz : \"))",
         "detail": "pages.denem",
         "documentation": {}
     },
     {
-        "label": "a",
+        "label": "bInt",
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "a = 4\nb = 534\ndef onk(a,b):\n    print(a)\n    print(b)\nonk(b,a)\nDENIZ=0\ndENIZ=1\nprint(DENIZ)\nprint(dENIZ)",
+        "peekOfCode": "bInt = 1234\nbolmeSonucuF_I = flt / kInt\nbolmeSonucu_kI = bInt / kInt\nbolumb_kI = bInt // kInt\nprint(bolmeSonucuF_I, type(bolmeSonucuF_I))\nprint(bolmeSonucu_kI, type(bolmeSonucu_kI))\nprint(int(bolmeSonucu_kI), type(bolmeSonucu_kI))\nprint(bolumb_kI, type (bolumb_kI))\nmaas = float(input(\"Maas miktarınızı giriniz : \"))\ncocukSayisi = int(input(\"Kac Cocugunuz var : \"))",
         "detail": "pages.denem",
         "documentation": {}
     },
     {
-        "label": "b",
+        "label": "bolmeSonucuF_I",
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "b = 534\ndef onk(a,b):\n    print(a)\n    print(b)\nonk(b,a)\nDENIZ=0\ndENIZ=1\nprint(DENIZ)\nprint(dENIZ)\nisim = input(\"Lütfen isminizi giriniz : \")",
+        "peekOfCode": "bolmeSonucuF_I = flt / kInt\nbolmeSonucu_kI = bInt / kInt\nbolumb_kI = bInt // kInt\nprint(bolmeSonucuF_I, type(bolmeSonucuF_I))\nprint(bolmeSonucu_kI, type(bolmeSonucu_kI))\nprint(int(bolmeSonucu_kI), type(bolmeSonucu_kI))\nprint(bolumb_kI, type (bolumb_kI))\nmaas = float(input(\"Maas miktarınızı giriniz : \"))\ncocukSayisi = int(input(\"Kac Cocugunuz var : \"))\nif cocukSayisi == 1 :",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "bolmeSonucu_kI",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "bolmeSonucu_kI = bInt / kInt\nbolumb_kI = bInt // kInt\nprint(bolmeSonucuF_I, type(bolmeSonucuF_I))\nprint(bolmeSonucu_kI, type(bolmeSonucu_kI))\nprint(int(bolmeSonucu_kI), type(bolmeSonucu_kI))\nprint(bolumb_kI, type (bolumb_kI))\nmaas = float(input(\"Maas miktarınızı giriniz : \"))\ncocukSayisi = int(input(\"Kac Cocugunuz var : \"))\nif cocukSayisi == 1 :\n\tmaas *= 1.05",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "bolumb_kI",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "bolumb_kI = bInt // kInt\nprint(bolmeSonucuF_I, type(bolmeSonucuF_I))\nprint(bolmeSonucu_kI, type(bolmeSonucu_kI))\nprint(int(bolmeSonucu_kI), type(bolmeSonucu_kI))\nprint(bolumb_kI, type (bolumb_kI))\nmaas = float(input(\"Maas miktarınızı giriniz : \"))\ncocukSayisi = int(input(\"Kac Cocugunuz var : \"))\nif cocukSayisi == 1 :\n\tmaas *= 1.05\nelif cocukSayisi == 2 : ",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "maas",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "maas = float(input(\"Maas miktarınızı giriniz : \"))\ncocukSayisi = int(input(\"Kac Cocugunuz var : \"))\nif cocukSayisi == 1 :\n\tmaas *= 1.05\nelif cocukSayisi == 2 : \n\tmaas *= 1.1\nelse:\n\tmaas *=1.15\nprint(\"Maasınız son miktarı : \" + str(maas))\nisim = \"Deniz CANTÜRK\"",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "cocukSayisi",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "cocukSayisi = int(input(\"Kac Cocugunuz var : \"))\nif cocukSayisi == 1 :\n\tmaas *= 1.05\nelif cocukSayisi == 2 : \n\tmaas *= 1.1\nelse:\n\tmaas *=1.15\nprint(\"Maasınız son miktarı : \" + str(maas))\nisim = \"Deniz CANTÜRK\"\nuzunluk = len(isim)",
         "detail": "pages.denem",
         "documentation": {}
     },
@@ -202,16 +525,16 @@
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "isim = input(\"Lütfen isminizi giriniz : \")\nsoyad = input(\"Soyadınız : \")\nprint(f\"Adınız {isim} {soyad}, tanıştığımıza memnun oldum... \")\nprint(type(isim))\na = input()\nprint(a)\nimport math\nprint(math.pi)\n\"\"\"",
+        "peekOfCode": "isim = \"Deniz CANTÜRK\"\nuzunluk = len(isim)\nfor i in range(0,uzunluk):\n    print(isim[i], end=\".\")\nprint()\nprint(isim[0])\nfor i in range(0,5):\n    print(i)\na = \"4.5\"\nprint(type(a))",
         "detail": "pages.denem",
         "documentation": {}
     },
     {
-        "label": "soyad",
+        "label": "uzunluk",
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "soyad = input(\"Soyadınız : \")\nprint(f\"Adınız {isim} {soyad}, tanıştığımıza memnun oldum... \")\nprint(type(isim))\na = input()\nprint(a)\nimport math\nprint(math.pi)\n\"\"\"",
+        "peekOfCode": "uzunluk = len(isim)\nfor i in range(0,uzunluk):\n    print(isim[i], end=\".\")\nprint()\nprint(isim[0])\nfor i in range(0,5):\n    print(i)\na = \"4.5\"\nprint(type(a))\nprint(int(float(a)))",
         "detail": "pages.denem",
         "documentation": {}
     },
@@ -220,35 +543,80 @@
         "kind": 5,
         "importPath": "pages.denem",
         "description": "pages.denem",
-        "peekOfCode": "a = input()\nprint(a)\nimport math\nprint(math.pi)\n\"\"\"",
+        "peekOfCode": "a = \"4.5\"\nprint(type(a))\nprint(int(float(a)))\na = 13.949999999999999\n#format(a, '.2f')\nprint(f\"{a:.4f}\")\nprint(a)\nsequence = [1,2,8,100,200,'datacamp','tutorial']\nfor i in sequence:\n    print(i)",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "a = 13.949999999999999\n#format(a, '.2f')\nprint(f\"{a:.4f}\")\nprint(a)\nsequence = [1,2,8,100,200,'datacamp','tutorial']\nfor i in sequence:\n    print(i)\nfor i in range(len(sequence)):\n    print(sequence[i])\nfor i in range(4,100,5):",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "sequence",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "sequence = [1,2,8,100,200,'datacamp','tutorial']\nfor i in sequence:\n    print(i)\nfor i in range(len(sequence)):\n    print(sequence[i])\nfor i in range(4,100,5):\n    print(i, end=\" \")\nprint()\na = [1,2,3,4,5]\nb = iter(a)",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "a = [1,2,3,4,5]\nb = iter(a)\nwhile True:\n\t    try:\n\t        k = next(b)\n\t    except StopIteration:\n\t       print(\"Sonuna Geldi\")\n\t       break\n\t    print(k\nisim = 45852",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "b = iter(a)\nwhile True:\n\t    try:\n\t        k = next(b)\n\t    except StopIteration:\n\t       print(\"Sonuna Geldi\")\n\t       break\n\t    print(k\nisim = 45852\nfor i in isim:",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "isim",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "isim = 45852\nfor i in isim:\n    print(i)\ndata = [5, 6, 12, 104, 204, \"Python\", \"Dersim\"]\nsayac = 0\nfor i in range(len(data)):\n\tif data[i] % 2 == 0:\n\t\tsayac +=1\nprint(sayac)\nfor I in \"Python\":",
+        "detail": "pages.denem",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "data = [5, 6, 12, 104, 204, \"Python\", \"Dersim\"]\nsayac = 0\nfor i in range(len(data)):\n\tif data[i] % 2 == 0:\n\t\tsayac +=1\nprint(sayac)\nfor I in \"Python\":\n\tprint(I) \ndata = [5, 6, 12, 104, 204, \"Python\", \"Dersim\"]\nfor i in data:",
         "detail": "pages.denem",
         "documentation": {}
     },
     {
         "label": "sayac",
         "kind": 5,
-        "importPath": "pages.tekrar",
-        "description": "pages.tekrar",
-        "peekOfCode": "sayac = 1\nsayi = int(input(\"Sayı Giriniz : \"))\ntoplam = 0\nwhile sayac <= sayi:\n    sayac +=1\n    toplam = toplam + sayac\nprint(\"Toplam Değeri \", toplam)",
-        "detail": "pages.tekrar",
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "sayac = 0\nfor i in range(len(data)):\n\tif data[i] % 2 == 0:\n\t\tsayac +=1\nprint(sayac)\nfor I in \"Python\":\n\tprint(I) \ndata = [5, 6, 12, 104, 204, \"Python\", \"Dersim\"]\nfor i in data:\n\tprint(i)",
+        "detail": "pages.denem",
         "documentation": {}
     },
     {
-        "label": "sayi",
+        "label": "data",
         "kind": 5,
-        "importPath": "pages.tekrar",
-        "description": "pages.tekrar",
-        "peekOfCode": "sayi = int(input(\"Sayı Giriniz : \"))\ntoplam = 0\nwhile sayac <= sayi:\n    sayac +=1\n    toplam = toplam + sayac\nprint(\"Toplam Değeri \", toplam)",
-        "detail": "pages.tekrar",
-        "documentation": {}
-    },
-    {
-        "label": "toplam",
-        "kind": 5,
-        "importPath": "pages.tekrar",
-        "description": "pages.tekrar",
-        "peekOfCode": "toplam = 0\nwhile sayac <= sayi:\n    sayac +=1\n    toplam = toplam + sayac\nprint(\"Toplam Değeri \", toplam)",
-        "detail": "pages.tekrar",
+        "importPath": "pages.denem",
+        "description": "pages.denem",
+        "peekOfCode": "data = [5, 6, 12, 104, 204, \"Python\", \"Dersim\"]\nfor i in data:\n\tprint(i)",
+        "detail": "pages.denem",
         "documentation": {}
     }
 ]
